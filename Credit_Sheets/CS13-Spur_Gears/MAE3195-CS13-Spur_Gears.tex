@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{lastpage} 
+\usepackage{fancyhdr}	%For header and footer
+\usepackage{amsmath, amsthm, amssymb} %For mathematics
+\usepackage{graphicx}
+\usepackage{hyperref}	%For hyperlinks
+
+% Page setup
+\setlength{\topmargin}{-0.4in}
+\setlength{\topskip}{0.3in}    % between header and text
+\setlength{\textheight}{9.in} % height of main text
+\setlength{\textwidth}{6.5in}    % width of text
+\setlength{\oddsidemargin}{0in} % odd page left margin
+\setlength{\evensidemargin}{0in} % even page left margin
+\setlength{\parindent}{0pt}	% Suppress the indent
+
+% Macros
+\newcommand*{\bv}[1]{\textbf{#1}} % Write vectors in bold case within an equation environment
+
+% Header and Footer
+\pagestyle{fancy}%\fancyhead{}
+\fancyhf{}	% Clear the default header and footer
+\fancyhead[L]{MAE 3195 \\ Spring 2010}
+\fancyhead[R]{Credit Sheet 13 \\ \thepage /\pageref{LastPage}}
+
+
+% Title
+\title{MAE 3195, Credit Sheet 13\\ Modeling Spur Gears with Involute Teeth}
+\date{}
+
+% Body of document
+\begin{document}
+\maketitle
+
+Work through the spur gears tutorial. When you are finished with the tutorial, save copy of the original file to ``***-spur\_gear''. Load the file ``***-spur\_gear''. Modify the parameters/dimensions of the part and add new features to model the spur gear identified as ``YD-16'' on the Boston Gear catalog page (12 diametral pitch, 20 degree pressure angle, 16 teeth).\\
+
+Produce a detailed drawing of your gear that labels the dimensions of the gear and its teeth. The drawing should have three views: 
+\begin{enumerate}
+	\item Front view of the gear (appears circular),
+	\item Side view of gear (appears rectangular), and
+	\item Detailed view of the involute gear teeth.
+\end{enumerate}
+	
+Add dimensions to the detailed view of the teeth; you probably want to refer to your undergraduate textbook on machine design to refresh your memory. Print a copy of the drawing, and be prepared to hand it in on the due date.
+
+\end{document}

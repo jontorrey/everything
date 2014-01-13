@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{lastpage} 
+\usepackage{fancyhdr}	%For header and footer
+\usepackage{amsmath, amsthm, amssymb} %For mathematics
+\usepackage{graphicx}
+\usepackage{hyperref}	%For hyperlinks
+
+% Page setup
+\setlength{\topmargin}{-0.4in}
+\setlength{\topskip}{0.3in}    % between header and text
+\setlength{\textheight}{9.in} % height of main text
+\setlength{\textwidth}{6.5in}    % width of text
+\setlength{\oddsidemargin}{0in} % odd page left margin
+\setlength{\evensidemargin}{0in} % even page left margin
+\setlength{\parindent}{0pt}	% Suppress the indent
+
+% Macros
+\newcommand*{\bv}[1]{\textbf{#1}} % Write vectors in bold case within an equation environment
+
+% Header and Footer
+\pagestyle{fancy}%\fancyhead{}
+\fancyhf{}	% Clear the default header and footer
+\fancyhead[L]{MAE 3195 \\ Name:}
+\fancyhead[R]{Credit Sheet 17 \\ \thepage /\pageref{LastPage}}
+
+
+% Title
+\title{MAE 3195, Credit Sheet 17, Tutorial Lesson 3-4\\
+Sensitivity Studies and Optimization by FEM}
+\date{}
+
+% Body of document
+\begin{document}
+\maketitle
+
+For this homework, read and work through Lessons 3 and 4 in your text \textit{ProMechanica Tutorial}. Before you launch Pro/E, make a new sub-directory in your personal MAE3195 directory titled ``HW17'' and use HW17 as your working directory.\\
+
+Since this is a tutorial homework, each individual must perform this work independently. You are encouraged, however, to discuss the assignment with other students as necessary.\\
+
+It is recommended (but not required) that you study the ``Questions for Review'' and create some of the ``Exercise'' models at the end of the chapter. After completing the lesson, answer the following questions and bring this Credit Sheet with you to class on the due date.\vspace{.25in}
+
+\hrule \vspace{.25in}
+
+This homework assignment is based on Exercise 3 of Chapter 3 and Exercise 2 of Chapter 4, of the \textit{Mechanica Tutorial} textbook. You should model the geometry of the aluminum bracket using the dimensions given in Exercise 3 of Chapter 3; be sure that your model only includes the dimensions given in their drawing. For all of the finite element analyses, the bottom surface of the bracket is to be rigidly fixed with zero displacement constraints (boundary conditions). Be sure to use the aluminum material properties and set the units of your model to ``in/lbf/s''.
+
+\begin{enumerate}
+	\item Solve a static analysis using multi-pass adaptive solution and 5\% convergence on strain energy. Print a fringe plot of the von Mises stress that results from applying 1000~lbf at the 30~degree angle; on your plot display the location of the maximum von Mises stress. Print a graph demonstrating that strain energy converged to within 5\%. Determine whether the part would fail if it were made of the following materials:
+	\begin{itemize}
+		\item Aluminum 2014-T6, $S_y$ = 58 ksi
+		\item Aluminum 6061-T6, $S_y$ = 35 ksi
+		\item Aluminum 7075-T6, $S_y$ = 73 ksi
+	\end{itemize}
+	
+	\vspace{.25in}
+	
+	\item Solve a static analysis using multi-pass adaptive solution and 5\% convergence on strain energy. How many elements are generated? Print a fringe plot of the von Mises stress that results from applying 1000~lbf bearing load at the 30~degree angle; on your plot display the location of the maximum von Mises stress. Print a graph demonstrating that strain energy converged to within 5\%.\\
+What is the total strain energy in the part? Determine whether the part would fail if it were made of the following materials:
+	\begin{itemize}
+		\item Aluminum 2014-T6, $S_y$ = 58 ksi
+		\item Aluminum 6061-T6, $S_y$ = 35 ksi
+		\item Aluminum 7075-T6, $S_y$ = 73 ksi
+	\end{itemize}
+	
+	\vspace{.25in}
+
+	\item Change the autogem settings to
+		\begin{enumerate}
+			\item allowable angles (on both face and edge) to minimum of 10 and maximum of 170,
+			\item max allowable aspect ratio 4, and max allowable edge turn 45.
+		\end{enumerate}
+How many elements are generated? Resolve a static analysis using multi-pass adaptive solution and 5\% convergence on strain energy. Print a fringe plot of the von Mises stress that results from applying 1000~lbf bearing load at the 30~degree angle; on your plot display the location of the maximum von Mises stress. Print a graph demonstrating that the strain energy converged to within 5\%.
+What is the total strain energy in the part? Compare the strain energy values computed in Question 2 and Question 3 and conclude whether the increased quantity of elements was necessary for achieving a more accurate solution.
+
+	\vspace{.25in}
+
+	\item Optimize the bracket to minimize its mass while satisfying a constraint that the max Von Mises stress should be less than 1500~psi. The design variables are the thickness of the base plate (minimum 0.25~inches), thickness of the upright (minimum 0.5~inches), and the radius of the fillet (minimum 0.25~inches, maximum 1.0~inches). Print a plot of the max Von Mises stress as a function of the Optimization Pass. Print a graph of the total mass as a function of the optimization pass. Change the dimensions of the part to the optimal dimensions and print a Pro/E drawing with dimensions of the optimized bracket.
+
+\end{enumerate}
+
+\end{document}

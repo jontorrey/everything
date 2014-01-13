@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{lastpage} 
+\usepackage{fancyhdr}	%For header and footer
+\usepackage{amsmath, amsthm, amssymb} %For mathematics
+\usepackage{graphicx}
+\usepackage{hyperref}	%For hyperlinks
+
+% Page setup
+\setlength{\topmargin}{-0.4in}
+\setlength{\topskip}{0.3in}    % between header and text
+\setlength{\textheight}{9.in} % height of main text
+\setlength{\textwidth}{6.5in}    % width of text
+\setlength{\oddsidemargin}{0in} % odd page left margin
+\setlength{\evensidemargin}{0in} % even page left margin
+\setlength{\parindent}{0pt}	% Suppress the indent
+
+% Macros
+\newcommand*{\bv}[1]{\textbf{#1}} % Write vectors in bold case within an equation environment
+
+% Header and Footer
+\pagestyle{fancy}%\fancyhead{}
+\fancyhf{}	% Clear the default header and footer
+\fancyhead[L]{MAE 3195 \\ Name:}
+\fancyhead[R]{Credit Sheet 14 \\ \thepage /\pageref{LastPage}}
+
+
+% Title
+\title{MAE 3195, Credit Sheet 14\\ Mechanical Connections and Animations}
+\date{}
+
+% Body of document
+\begin{document}
+\maketitle
+
+For this homework, you will create an animation showing the kinematics of a reciprocating saw. Download the files that are in the attached zipped folder on Blackboard. One of the files is a 4-second mpeg movie. The objective of this assignment is to reproduce this movie.\\
+The ProE files on Blackboard are the different rigid bodies constituing the reciprocating saw. Each asm file is a subassembly file containing a skeleton and a part. To connect and animate the whole mechanism, you will have to assemble these subassemblies.\\
+
+\begin{enumerate}
+	\item Identify the mechanical connections between the different bodies.
+	\vspace{0.25in}
+	\item How many degrees of freedom does the mechanism have? Prove it by using Gruebler's equation in 3 dimensions.
+	\vspace{0.25in}
+	\item In your ``HW14'' folder, create a new empty assembly called ``***-saw.asm''. In this assembly, connect the five subassemblies you have downloaded from Blackboard to reproduce the reciprocating saw mechanism. You may have to add some datum features (axes, planes, points) in the subassemblies to create the connections.
+	\vspace{0.25in}
+	\item Animate the mechanism with the ``Animation'' application of Pro/E.
+	\vspace{0.25in}
+	\item Create a short mpeg movie from your assembly. You should show at least one cycle. 
+\end{enumerate}
+
+\end{document}

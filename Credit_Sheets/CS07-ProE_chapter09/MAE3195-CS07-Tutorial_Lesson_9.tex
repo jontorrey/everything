@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{lastpage} 
+\usepackage{fancyhdr}	%For header and footer
+\usepackage{amsmath, amsthm, amssymb} %For mathematics
+\usepackage{graphicx}
+\usepackage{hyperref}	%For hyperlinks
+
+% Page setup
+\setlength{\topmargin}{-0.4in}
+\setlength{\topskip}{0.3in}    % between header and text
+\setlength{\textheight}{9.in} % height of main text
+\setlength{\textwidth}{6.5in}    % width of text
+\setlength{\oddsidemargin}{0in} % odd page left margin
+\setlength{\evensidemargin}{0in} % even page left margin
+\setlength{\parindent}{0pt}	% Suppress the indent
+
+% Macros
+\newcommand*{\bv}[1]{\textbf{#1}} % Write vectors in bold case within an equation environment
+
+% Header and Footer
+\pagestyle{fancy}%\fancyhead{}
+\fancyhf{}	% Clear the default header and footer
+\fancyhead[L]{MAE 3195 \\ Name:}
+\fancyhead[R]{Credit Sheet 7 \\ \thepage /\pageref{LastPage}}
+
+
+% Title
+\title{MAE 3195, Credit Sheet 7, Tutorial Lesson 9\\
+Assembly Fundamentals}
+\date{}
+
+% Body of document
+\begin{document}
+\maketitle
+
+For this homework, read and work through Lesson 9 in your text \textit{ProEngineer Tutorial}. Before you launch Pro/E, make a new sub-directory in your personal MAE3195 directory titled ``HW7'' and use HW7 as your working directory. Copy the last revisions of the files named ``***-hw4.prt'' and ``***-pulley.prt'' from your HW4 directory, and paste them into your HW7 directory. In Pro/E, use File$>$Open to load the ``***-hw4.prt'' file into session. Using File$>$Rename to change the name of ``***-hw4.prt'' to ``***-lbrack.prt''. Then use File$>$Open in Pro/E to retrieve ``***-pulley.prt'' from your HW7 working directory, and then add the keyway feature as described at the beginning of Lesson 9. When the book asks you to create the next parts, use the names given below (``***'' indicates your primary initials):\\
+
+\begin{tabular}[t]{ll} 
+	Axle: & ``***-axle''\\
+	Bplate: & ``***-bplate''\\
+	Bolt: & ``***-bolt''\\
+	Bushing: & ``***-bushing''\\
+	Washer: & ``***-washer''
+\end{tabular}
+
+\vspace{0.25in}
+When your book asks you to create a new assembly named ``support'', name it ``***-support'' instead.\\
+
+Since this is a tutorial homework, each individual must perform this work independently. You are encouraged, however, to discuss the assignment with other students as necessary.\\
+
+It is recommended (but not required) that you study the ``Questions for Review'' and create some of the ``Exercise'' models at the end of the chapter. After completing the lesson, answer the following questions and bring this Credit Sheet with you to class on the due date.
+
+\pagebreak
+
+\section*{Review Questions}
+\begin{enumerate}
+	\item If several identical parts are required in an assembly, do you need a separate part file for each one?
+	\vspace{1.25in}
+	\item List the main assembly constraints.
+	\vspace{1.25in}
+	\item What degrees of freedom are constrained by each of the main assembly constraints? On the back of this sheet, draw a sketch and illustrate the constrained and unconstrained degrees of freedom.
+	\vspace{1.25in}
+	\item What is the difference between ``Separate Window'' and ``Same Window'' while specifying assembly constraints?
+	\vspace{1.25in}
+	\item Does it matter what order you create assembly constraints? When you are picking references does it matter if you select component references before assembly references?
+\end{enumerate}
+
+\end{document}
