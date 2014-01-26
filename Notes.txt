@@ -1,0 +1,28 @@
+The Desgin of Everyday Things
+Revised and Expanded Edition
+Don Norman
+978-0-465-05065-9
+
+Two of the most important characterstics of good design are discoverability and understanding. Discoverability: Is it possible to even figuer out what actions are possible and where and how to perform them? Understanding: What does it all mean? How is the product supposed to be used? What to all the different controls and settings mean?
+
+Experience is critical, for it determines how fondly people remember their interactions. Was the overal expereience positive, or was it frusterating and confusing? When our home technology behaves in an uninterpretable fashion we can become confused, frusterated, and even angry -- all strong emotiong. Cognition and emotion are tightly intertwined, which means that the designers must design with both in mind.
+
+Feedback must be immedate: even a delay of a tenth of a second can be disconnerting. If the dealy is too long, people often give up, going off to do other activiteis. This is annoying to people, but can also be wasteful of resources when the system spends considerable time and effort to satisfy the request, only to find that the intended recipient is no longer there
+
+There we have it. Seven stages of action: one for goals, three for execution, and three for evaluation. 1. Goal (form the goal). 2. Plan (the action). 3. Specify (an action sequence). 4. Perform (the action sequence). 5. Perceive (the state of the world). 6. Interpret (the perception). 7. COmpare (the outcome with the goal).
+
+Three levels of processing: Visceral, Behavioral, and Reflective. Visceral and behavioral levels are subconscious and the home of basic emotions. The reflective level is where conscious thought and decisiion-making reside, as well as the highest level of emotions.
+
+Amusment parks are experts at balancing the conflicting responses of the emotional stages, providing rides and fun houses that trigger fear responses from the viscera and behavioral levels, while all the time providing reassurance at the reflective level that the park would never subject anyone to real danger.
+
+The designs of our products and services must aso follow this philosphy. So, to the designers who are reading this, let me give you some advice:
+    Do not blame people when they fail to use your products properly.
+    Take people's difficulties as signifiers of where the product can be improved.
+    Eliminate all error messages from electronic or computer systems. Instead, provide help and guidance.
+    Make it possible to correct problems directly from help and guidance messages. Allow people to continue with their task: Don't impede progress -- help make it smooth and continuous. Never make people start over.
+    Assume that what people have done is partially correct, so if it is inappropriate, privide the guidance that allows them to correct the problem and be on their way.
+    Think positively, for yourself and for the people you interact with.
+    
+There is often a logic involved in the choice of unlikely places. For example, a friend of ours was required by her insurance company to aquire a safe if she wished to insure her valuable gems, Recognizing that she might forget the combination to the safe, she though carefully about where to key the combination. Her solutions was to write it in her personal phone directory under the letter S next to "Mr. and Mrs. Safe," as if it where a telephone number. There is a clear logic here: Store numerical information with other numerical information. She was appalled, however, when she heard a reformed burglar on a daytime television talk show say that upon encountering a safe, he always headed for the phone directory because so many people keept the combination there. (From Winograd & Soloway, 1986, "On Forgetting the Locations of Things Stored in Special Places.")
+
+Because retreival is a reconstruction process, it can be erroneous. We may reconstruct events the way we woild prefer to remember them, rather than the way we experience them. It is relatively easy to bias people so that they form false memories, "remembering" events in their lives with great clarity, even though they never occurred. This is one reason that eyewitness testimony in courts of law is so problematic: eyewitnesses are notoriously unreliable. A huge number of psychological experienements show how easy it is to implant flase memories into people's minds so convincingly that people refuse to admit that the memory is of an eevent that never happened.
